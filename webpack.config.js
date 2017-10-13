@@ -17,7 +17,10 @@ var config = {
   },
   plugins: [new HtmlWebpackPlugin({
     template: 'app/index.html'
-  })]
+  })],
+  devServer: {
+    historyApiFallback: true
+  },
 }
 
 if(process.env.NODE_ENV === 'production') {
