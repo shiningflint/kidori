@@ -62,6 +62,7 @@ html {
 body {
   font-size: 16px;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Hiragino Kaku Gothic Pro", Meiryo, "Malgun Gothic", "Helvetica Neue", sans-serif;
+  color: #545454;
 }
 
 .app-wrap {
@@ -142,4 +143,38 @@ body {
   font-weight: 500;
   text-align: justify;
   text-justify: inter-ideograph;
+}
+
+/*PAGE TITLE*/
+.page-title {
+  display: inline-block;
+  color: #545454;
+  font-family: "Times New Roman", Times, "serif";
+  font-size: 1.999em;
+  border-bottom: 1px solid #545454;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+}
+
+/*PRODUCTS PAGE*/
+.products-wrap {
+  position: absolute;
+  top: 60px;
+  right: 1%;
+  width: 80%;
+  height: 600px;
+  text-align: center;
+}
+.products-ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.products-item {
+  width: 28%;
+  margin-bottom: 16px;
+  text-align: left;
+}
+.products-price {
+  margin-top: 8px;
 }
