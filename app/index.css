@@ -135,6 +135,7 @@ body {
   position: absolute;
   top: 210px;
   right: 57%;
+  color: black;
   writing-mode: vertical-rl;
   line-height: 50px;
   letter-spacing: 4px;
