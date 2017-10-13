@@ -28,27 +28,27 @@ class Products extends React.Component {
         <PageTitle title="PRODUCTS"/>
         <ul className="products-ul">
           <Product
-            image={require('../../assets/bonsai/bonsai1.jpg')}
+            image="https://ki-do-ri.jp/upload/save_image/08241916_599ea799d0107.jpg"
             price="162,000"
             />
           <Product
-            image={require('../../assets/bonsai/bonsai2.jpg')}
+            image="https://ki-do-ri.jp/upload/save_image/08241636_599e81e0c93cf.jpg"
             price="91,800"
             />
           <Product
-            image={require('../../assets/bonsai/bonsai3.jpg')}
+            image="https://ki-do-ri.jp/upload/save_image/08241540_599e74e293c1f.jpg"
             price="3,240"
             />
           <Product
-            image={require('../../assets/bonsai/bonsai4.jpg')}
+            image="https://ki-do-ri.jp/upload/save_image/08242110_599ec24ce4174.jpg"
             price="91,800"
             />
           <Product
-            image={require('../../assets/bonsai/bonsai5.jpg')}
+            image="https://ki-do-ri.jp/upload/save_image/08242109_599ec1efb2c26.jpg"
             price="16,200"
             />
           <Product
-            image={require('../../assets/bonsai/bonsai6.jpg')}
+            image="https://ki-do-ri.jp/upload/save_image/08242107_599ec17c91505.jpg"
             price="162,000"
             />
         </ul>
