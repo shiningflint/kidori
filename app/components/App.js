@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Navigation from './Navigation';
+import Home from './Home';
 
 class App extends React.Component {
   constructor(props) {
@@ -8,8 +10,9 @@ class App extends React.Component {
 
   render() {
     return(
-      <div>
-        <h1>Hello Kidori</h1>
+      <div className="app-wrap">
+        <Navigation/>
+        <Home/>
       </div>
     );
   }
