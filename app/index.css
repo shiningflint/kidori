@@ -334,6 +334,7 @@ body {
 
   .app-wrap {
     height: auto;
+    padding-bottom: 32px;
   }
 
   /*SP HOME PAGE*/
