@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 import PageTitle from './PageTitle';
 
 const PRODUCTS = [
@@ -99,6 +100,15 @@ class Products extends React.Component {
       </div>
     );
   }
+}
+
+Products.propTypes = {
+  spWidth: PropTypes.number,
+}
+Product.propTypes = {
+  image: PropTypes.string,
+  price: PropTypes.string,
+  id: PropTypes.number,
 }
 
 module.exports = Products;

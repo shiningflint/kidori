@@ -31,7 +31,7 @@ class App extends React.Component {
       spBtn = <SPbtn onClick={this.spNavToggle} spShow={this.state.spnavshow} />
     }
     return(
-      <BrowserRouter>
+      <BrowserRouter basename="/react/kidori/dist">
         <div className="app-wrap">
           <Navigation
             spShow={this.state.spnavshow}

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import PropTypes from 'prop-types';
 
 class PageTitle extends React.Component {
   constructor(props) {
@@ -28,6 +28,10 @@ class PageTitle extends React.Component {
       </h1>
     );
   }
+}
+
+PageTitle.propTypes = {
+  title: PropTypes.string,
 }
 
 module.exports = PageTitle;

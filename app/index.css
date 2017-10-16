@@ -281,6 +281,7 @@ body {
   }
   .nav-spbtn {
     position: relative;
+    height: 28px;
     border: none;
     border-radius: 6px;
     background: linear-gradient(to right, #049a4f 0%,#33b569 100%);
@@ -296,7 +297,7 @@ body {
   .nav-spbtn-lines {
     display: block;
     position: absolute;
-    top: 8px;
+    top: 10px;
     left: 8px;
     height: 1px;
     width: 16px;

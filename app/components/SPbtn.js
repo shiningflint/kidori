@@ -1,21 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 
-class SPbtn extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+function SPbtn(props) {
+  return(
+    <div className="nav-spbtn-wrap">
+      <button className={"nav-spbtn"+(props.spShow ? ' active' : '')} onClick={props.onClick}>
+        <span className="nav-spbtn-lines"></span>
+        <span>{props.spShow ? 'Close' : 'Menu' }</span>
+      </button>
+    </div>
+  );
+}
 
-  render() {
-    return(
-      <div className="nav-spbtn-wrap">
-        <button className={"nav-spbtn"+(this.props.spShow ? ' active' : '')} onClick={this.props.onClick}>
-          <span className="nav-spbtn-lines"></span>
-          <span>{this.props.spShow ? 'Close' : 'Menu' }</span>
-        </button>
-      </div>
-    );
-  }
+SPbtn.propTypes = {
+  onClick: PropTypes.func,
+  spShow: PropTypes.bool,
 }
 
 module.exports = SPbtn;

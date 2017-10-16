@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 
 var bannerURL = "https://images.unsplash.com/photo-1463320898484-cdee8141c787?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=4fb4c867279f3f242bad30c12e91bf9b";
 
@@ -125,6 +126,21 @@ class Home extends React.Component {
       </div>
     );
   }
+}
+
+Home.propTypes = {
+  spWidth: PropTypes.number
+}
+HomeBanner.propTypes = {
+  timeout: PropTypes.number,
+  url: PropTypes.string
+}
+HomeTxt.propTypes = {
+  timeout: PropTypes.number
+}
+HomeLogo.propTypes = {
+  timeout: PropTypes.number,
+  url: PropTypes.string,
 }
 
 module.exports = Home;
