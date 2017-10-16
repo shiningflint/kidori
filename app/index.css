@@ -331,4 +331,40 @@ body {
   .nav-spbtn.active > .nav-spbtn-lines::after {
     transform: translateY(-4px) rotate(-45deg);
   }
+
+  .app-wrap {
+    height: auto;
+  }
+
+  /*SP HOME PAGE*/
+  .home-wrap {
+    height: auto;
+    padding-top: 32px;
+  }
+  .home-image-wrap {
+    position: static;
+  }
+  .home-txt {
+    height: 360px;
+    right: auto;
+    left: 4%;
+  }
+  .home-banner-wrap {
+    top: 440px;
+    height: 240px;
+    margin-bottom: 32px;
+  }
+  /*SP PRODUCTS PAGE*/
+  .products-wrap {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding-top: 32px;
+  }
+  .products-ul {
+    padding: 16px;
+  }
+  .products-item {
+    width: 100%;
+  }
 }

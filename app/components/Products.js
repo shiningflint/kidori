@@ -75,6 +75,12 @@ class Products extends React.Component {
     super(props);
   }
 
+  componentDidMount() {
+    if (window.innerWidth <= this.props.spWidth) {
+      window.scrollTo(0,0);
+    }
+  }
+
   render() {
     return(
       <div className="products-wrap">

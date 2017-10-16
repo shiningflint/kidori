@@ -14,7 +14,7 @@ class HomeLogo extends React.Component {
   }
 
   componentDidMount() {
-    setTimeout(this.setImage, this.props.timeout)
+    setTimeout(this.setImage, this.props.timeout);
   }
 
   setActive() {
@@ -108,6 +108,12 @@ class HomeBanner extends React.Component {
 class Home extends React.Component {
   constructor(props) {
     super(props);
+  }
+
+  componentDidMount() {
+    if (window.innerWidth <= this.props.spWidth) {
+      window.scrollTo(0,0);
+    }
   }
 
   render() {

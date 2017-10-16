@@ -36,8 +36,11 @@ class App extends React.Component {
           <Navigation
             spShow={this.state.spnavshow}
             onClick={this.spNavToggle} />
-          <Route path="/" exact component={Home} />
-          <Route path="/products" component={Products} />
+          <Route path="/" exact
+            render={(props) => (<Home spWidth={smartphoneWidth} />)} />
+          <Route
+            path="/products"
+            render={(props) => (<Products spWidth={smartphoneWidth} />)} />
           {spBtn}
         </div>
       </BrowserRouter>
