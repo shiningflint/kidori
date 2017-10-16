@@ -72,7 +72,7 @@ body {
 
 /*NAVIGATION*/
 .navigation-wrap {
-  position: absolute;
+  position: fixed;
   top: 60px;
   z-index: 100;
 }
@@ -173,7 +173,7 @@ body {
   padding-bottom: 16px;
   margin-bottom: 32px;
   opacity: 0;
-  transition: opacity 0.5s; 
+  transition: opacity 0.5s;
 }
 .page-title.active {
   opacity: 1;
@@ -205,4 +205,130 @@ body {
 }
 .products-price {
   margin-top: 8px;
+}
+
+/*Phablet and smaller*/
+@media (max-width: 550px) {
+  /*SP navigation*/
+  .navigation-wrap {
+    position: fixed;
+    top: auto;
+    bottom: 48px;
+    width: 100%;
+    padding: 8px;
+    transform: translateY(304px);
+    transition: transform 0.1s 0.7s;
+  }
+  .navigation-wrap.active {
+    transform: translateY(0);
+    transition: transform 0.1s;
+  }
+  .navigation-item {
+    margin-bottom: 8px;
+  }
+  .navigation-item:last-child {
+    margin-bottom: 0;
+  }
+  .navigation-item--01 {
+    transform: translateY(304px);
+    transition: transform 0.4s 0.3s;
+  }
+  .navigation-wrap.active > .navigation-item--01 {
+    transform: translateY(0);
+    transition: transform 0.4s;
+  }
+  .navigation-item--02 {
+    transform: translateY(304px);
+    transition: transform 0.4s 0.2s;
+  }
+  .navigation-wrap.active > .navigation-item--02 {
+    transform: translateY(0);
+    transition: transform 0.4s 0.1s;
+  }
+  .navigation-item--03 {
+    transform: translateY(304px);
+    transition: transform 0.4s 0.1s;
+  }
+  .navigation-wrap.active > .navigation-item--03 {
+    transform: translateY(0);
+    transition: transform 0.4s 0.2s;
+  }
+  .navigation-item--04 {
+    transform: translateY(304px);
+    transition: transform 0.4s;
+  }
+  .navigation-wrap.active > .navigation-item--04 {
+    transform: translateY(0);
+    transition: transform 0.4s 0.3s;
+  }
+  .navigation-link {
+    color: white;
+    background-color: #049a4f;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+  }
+  .navigation-link:hover {
+    background-color: white;
+  }
+  .navigation-line::before {
+    background-color: white;
+  }
+
+  .nav-spbtn-wrap {
+    position: fixed;
+    bottom: 16px;
+    text-align: center;
+    width: 100%;
+  }
+  .nav-spbtn {
+    position: relative;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(to right, #049a4f 0%,#33b569 100%);
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 4px 16px 4px 32px;
+    font-family: "Times New Roman", Times, "serif";
+    font-size: 16px;
+  }
+  .nav-spbtn.active {
+    background: linear-gradient(to right, #d2260a 0%, #dc4829 100%);
+  }
+  .nav-spbtn-lines {
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    height: 1px;
+    width: 16px;
+    background-color: white;
+  }
+  .nav-spbtn-lines::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 1px;
+    width: 16px;
+    background-color: white;
+  }
+  .nav-spbtn-lines::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    height: 1px;
+    width: 16px;
+    background-color: white;
+  }
+  .nav-spbtn.active > .nav-spbtn-lines {
+    background-color: transparent;
+  }
+  .nav-spbtn.active > .nav-spbtn-lines::before {
+    transform: rotate(45deg);
+  }
+  .nav-spbtn.active > .nav-spbtn-lines::after {
+    transform: translateY(-4px) rotate(-45deg);
+  }
 }

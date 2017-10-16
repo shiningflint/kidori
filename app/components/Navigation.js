@@ -9,8 +9,11 @@ class NavigationItem extends React.Component {
 
   render() {
     return(
-      <li className="navigation-item">
-        <Link to={this.props.to} className="navigation-link">
+      <li className={"navigation-item navigation-item--"+this.props.number}>
+        <Link
+          to={this.props.to}
+          className="navigation-link"
+          onClick={this.props.onClick}>
           <span className="navigation-no">{this.props.number}</span>
           <span className="navigation-line"></span>
           <span className="navigation-name">{this.props.name}</span>
@@ -27,11 +30,11 @@ class Navigation extends React.Component {
 
   render() {
     return(
-      <ul className="navigation-wrap">
-        <NavigationItem number="01" name="Home" to="/" />
-        <NavigationItem number="02" name="Products" to="/products" />
-        <NavigationItem number="03" name="Dictionary" to="/dictionary" />
-        <NavigationItem number="04" name="Contact" to="/contact" />
+      <ul className={"navigation-wrap"+(this.props.spShow ? ' active' : '' )}>
+        <NavigationItem number="01" name="Home" to="/" onClick={this.props.onClick} />
+        <NavigationItem number="02" name="Products" to="/products" onClick={this.props.onClick} />
+        <NavigationItem number="03" name="Dictionary" to="/dictionary" onClick={this.props.onClick} />
+        <NavigationItem number="04" name="Contact" to="/contact" onClick={this.props.onClick} />
       </ul>
     );
   }
