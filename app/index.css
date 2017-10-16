@@ -172,6 +172,11 @@ body {
   border-bottom: 1px solid #545454;
   padding-bottom: 16px;
   margin-bottom: 32px;
+  opacity: 0;
+  transition: opacity 0.5s; 
+}
+.page-title.active {
+  opacity: 1;
 }
 
 /*PRODUCTS PAGE*/
@@ -192,6 +197,11 @@ body {
   width: 28%;
   margin-bottom: 16px;
   text-align: left;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.products-item.active {
+  opacity: 1;
 }
 .products-price {
   margin-top: 8px;
