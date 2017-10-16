@@ -117,6 +117,11 @@ body {
   text-align: center;
   top: 40px;
   left: 50%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.home-image-wrap.active {
+  opacity: 1;
 }
 .home-image {
   width: 164px;
@@ -130,6 +135,11 @@ body {
   height: 320px;
   background-position: center center;
   background-size: cover;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.home-banner-wrap.active {
+  opacity: 1;
 }
 .home-txt {
   position: absolute;
@@ -144,6 +154,13 @@ body {
   font-weight: 500;
   text-align: justify;
   text-justify: inter-ideograph;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+.home-txt.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /*PAGE TITLE*/
