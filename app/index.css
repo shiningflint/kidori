@@ -207,6 +207,74 @@ body {
   margin-top: 8px;
 }
 
+/*DICTIONARY*/
+.dictionary-pagewrap {
+  position: relative;
+  height: 100%;
+}
+.dictionary-pagebg {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.dictionary-pagebg.active {
+  opacity: 1;
+}
+.dictionary-wrapper {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 80%;
+  height: 600px;
+  text-align: center;
+}
+.dictionary-content {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: no-repeat 50% 50%;
+  padding: 64px 88px;
+  color: black;
+  font-size: 13px;
+  line-height: 2.0em;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.dictionary-content.active {
+  opacity: 1;
+}
+.dictionary-content__h2 {
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", serif;
+  font-size: 34px;
+  letter-spacing: 10px;
+  margin-bottom: 16px;
+}
+.dictionary-content__h2txt {
+  font-size: 15px;
+  font-family: "Times New Roman", serif;
+  letter-spacing: 1px;
+}
+.dictionary-content__read {
+  font-size: 1.414em;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+.dictionary-content__open {
+  font-weight: normal;
+  font-size: 15px;
+  font-family: "Times New Roman", serif;
+  margin-top: 16px;
+}
+.dictionary-content__book {
+  display: block;
+  margin: 0 auto;
+}
+
 /*Phablet and smaller*/
 @media (max-width: 550px) {
   /*SP navigation*/

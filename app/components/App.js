@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Navigation from './Navigation';
 import Home from './Home';
 import Products from './Products';
+import Dictionary from './Dictionary';
 import SPbtn from './SPbtn';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
@@ -31,7 +32,7 @@ class App extends React.Component {
       spBtn = <SPbtn onClick={this.spNavToggle} spShow={this.state.spnavshow} />
     }
     return(
-      <BrowserRouter basename="/react/kidori">
+      <BrowserRouter>
         <div className="app-wrap">
           <Navigation
             spShow={this.state.spnavshow}
@@ -41,6 +42,9 @@ class App extends React.Component {
           <Route
             path="/products"
             render={(props) => (<Products spWidth={smartphoneWidth} />)} />
+          <Route
+            path="/dictionary"
+            render={(props) => (<Dictionary spWidth={smartphoneWidth} />)} />
           {spBtn}
         </div>
       </BrowserRouter>
