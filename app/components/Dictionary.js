@@ -68,6 +68,9 @@ class Dictionary extends React.Component {
 
   componentDidMount() {
     setTimeout(this.setImage, 800);
+    if (window.innerWidth <= this.props.spWidth) {
+      window.scrollTo(0,0);
+    }
   }
 
   setActive() {
