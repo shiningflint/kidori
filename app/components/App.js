@@ -4,6 +4,7 @@ import Navigation from './Navigation';
 import Home from './Home';
 import Products from './Products';
 import Dictionary from './Dictionary';
+import Contact from './Contact';
 import SPbtn from './SPbtn';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
@@ -45,6 +46,9 @@ class App extends React.Component {
           <Route
             path="/dictionary"
             render={(props) => (<Dictionary spWidth={smartphoneWidth} />)} />
+            <Route
+              path="/contact"
+              render={(props) => (<Contact spWidth={smartphoneWidth} />)} />
           {spBtn}
         </div>
       </BrowserRouter>
