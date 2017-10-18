@@ -46,9 +46,9 @@ class App extends React.Component {
           <Route
             path="/dictionary"
             render={(props) => (<Dictionary spWidth={smartphoneWidth} />)} />
-            <Route
-              path="/contact"
-              render={(props) => (<Contact spWidth={smartphoneWidth} />)} />
+          <Route
+            path="/contact"
+            render={(props) => (<Contact spWidth={smartphoneWidth} />)} />
           {spBtn}
         </div>
       </BrowserRouter>

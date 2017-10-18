@@ -24,7 +24,9 @@ class ContactThanks extends React.Component {
             className="contact-btn"
             onMouseDown={ButtonPress}
             onMouseUp={ButtonRelease}
-            onMouseLeave={ButtonRelease}>TOPへ戻る</Link>
+            onMouseLeave={ButtonRelease}
+            onTouchStart={ButtonPress}
+            onTouchEnd={ButtonRelease}>TOPへ戻る</Link>
         </p>
       </div>
     );
@@ -56,6 +58,8 @@ class ContactKakunin extends React.Component {
             onMouseDown={ButtonPress}
             onMouseUp={ButtonRelease}
             onMouseLeave={ButtonRelease}
+            onTouchStart={ButtonPress}
+            onTouchEnd={ButtonRelease}
             className="contact-btn mr1">
             {this.props.labelBack}
           </button>
@@ -64,6 +68,8 @@ class ContactKakunin extends React.Component {
             onMouseDown={ButtonPress}
             onMouseUp={ButtonRelease}
             onMouseLeave={ButtonRelease}
+            onTouchStart={ButtonPress}
+            onTouchEnd={ButtonRelease}
             className="contact-btn">
             {this.props.labelSend}
           </button>
@@ -109,7 +115,9 @@ class ContactForm extends React.Component {
             className="contact-btn"
             onMouseDown={ButtonPress}
             onMouseUp={ButtonRelease}
-            onMouseLeave={ButtonRelease} />
+            onMouseLeave={ButtonRelease}
+            onTouchStart={ButtonPress}
+            onTouchEnd={ButtonRelease} />
         </p>
       </form>
     );
